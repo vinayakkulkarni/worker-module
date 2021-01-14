@@ -1,4 +1,4 @@
-# worker-module
+# @vinayakkulkarni/worker-module
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -12,22 +12,22 @@
 
 ## Setup
 
-1. Add `worker-module` dependency to your project
+1. Add `@vinayakkulkarni/worker-module` dependency to your project
 
 ```bash
-yarn add worker-module # or npm install worker-module
+npm install @vinayakkulkarni/worker-module
 ```
 
-2. Add `worker-module` to the `modules` section of `nuxt.config.js`
+2. Add `@vinayakkulkarni/worker-module` to the `modules` section of `nuxt.config.js`
 
 ```js
 {
   modules: [
     // Simple usage
-    'worker-module',
+    '@vinayakkulkarni/worker-module',
 
     // With options
-    ['worker-module', { /* module options */ }]
+    ['@vinayakkulkarni/worker-module', { /* module options */ }]
   ]
 }
 ```
@@ -35,7 +35,7 @@ yarn add worker-module # or npm install worker-module
 ## Development
 
 1. Clone this repository
-2. Install dependencies using `yarn install` or `npm install`
+2. Install dependencies using `npm install`
 3. Start development server using `npm run dev`
 
 ## License
@@ -45,17 +45,17 @@ yarn add worker-module # or npm install worker-module
 Copyright (c) Vinayak Kulkarni <inbox.vinayak@gmail.com>
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/worker-module/latest.svg
-[npm-version-href]: https://npmjs.com/package/worker-module
+[npm-version-src]: https://img.shields.io/npm/v/@vinayakkulkarni/worker-module/latest.svg
+[npm-version-href]: https://npmjs.com/package/@vinayakkulkarni/worker-module
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/worker-module.svg
-[npm-downloads-href]: https://npmjs.com/package/worker-module
+[npm-downloads-src]: https://img.shields.io/npm/dt/@vinayakkulkarni/worker-module.svg
+[npm-downloads-href]: https://npmjs.com/package/@vinayakkulkarni/worker-module
 
-[github-actions-ci-src]: https://github.com/vinayakkulkarni/worker-module/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/vinayakkulkarni/worker-module/actions?query=workflow%3Aci
+[github-actions-ci-src]: https://github.com/vinayakkulkarni/@vinayakkulkarni/worker-module/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/vinayakkulkarni/@vinayakkulkarni/worker-module/actions?query=workflow%3Aci
 
-[codecov-src]: https://img.shields.io/codecov/c/github/vinayakkulkarni/worker-module.svg
-[codecov-href]: https://codecov.io/gh/vinayakkulkarni/worker-module
+[codecov-src]: https://img.shields.io/codecov/c/github/vinayakkulkarni/@vinayakkulkarni/worker-module.svg
+[codecov-href]: https://codecov.io/gh/vinayakkulkarni/@vinayakkulkarni/worker-module
 
-[license-src]: https://img.shields.io/npm/l/worker-module.svg
-[license-href]: https://npmjs.com/package/worker-module
+[license-src]: https://img.shields.io/npm/l/@vinayakkulkarni/worker-module.svg
+[license-href]: https://npmjs.com/package/@vinayakkulkarni/worker-module
