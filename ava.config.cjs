@@ -5,5 +5,5 @@ module.exports = {
   babel: true,
   tap: false,
   verbose: true,
-  color: true
-}
+  color: true,
+};

@@ -1,6 +1,5 @@
-const { resolve } = require('path');
-
-module.exports = {
+import { resolve } from 'path';
+export default {
   ssr: false,
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),

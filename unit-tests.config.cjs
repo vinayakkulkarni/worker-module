@@ -1,6 +1,6 @@
-const baseConfig = require('./ava.config.cjs')
+const baseConfig = require('./ava.config.cjs');
 
 module.exports = {
   ...baseConfig,
-  files: ['./test/spec/**/*']
-}
+  files: ['./test/spec/**/*'],
+};

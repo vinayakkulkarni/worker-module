@@ -1,12 +1,13 @@
 module.exports = {
   presets: [
     [
-      '@babel/preset-env', {
+      '@babel/preset-env',
+      {
         targets: {
-          esmodules: true
-        }
-      }
-    ]
+          esmodules: true,
+        },
+      },
+    ],
   ],
   env: {
     test: {
@@ -15,10 +16,10 @@ module.exports = {
           '@babel/preset-env',
           {
             targets: {
-              esmodules: true
-            }
-          }
-        ]
+              esmodules: true,
+            },
+          },
+        ],
       ],
       plugins: [
         [
@@ -27,12 +28,12 @@ module.exports = {
             root: ['./'],
             alias: {
               '@': './',
-              '~': './'
-            }
-          }
-        ]
+              '~': './',
+            },
+          },
+        ],
       ],
-      ignore: ['ava.config.cjs']
-    }
-  }
-}
+      ignore: ['ava.config.cjs'],
+    },
+  },
+};

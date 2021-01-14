@@ -6,7 +6,7 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   extends: [
     '@nuxtjs',
@@ -16,4 +16,4 @@ module.exports = {
     'plugin:nuxt/recommended',
   ],
   plugins: ['prettier', 'vue'],
-}
+};
