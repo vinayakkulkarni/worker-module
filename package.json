@@ -1,0 +1,59 @@
+{
+  "name": "worker-module",
+  "version": "0.0.0",
+  "description": "Web Workers in your dope Nuxt apps",
+  "repository": "vinayakkulkarni/worker-module",
+  "license": "MIT",
+  "author": {
+    "name": "Vinayak Kulkarni",
+    "email": "inbox.vinayak@gmail.com",
+    "url": "https://vinayakkulkarni.dev"
+  },
+  "files": [
+    "lib"
+  ],
+  "private": false,
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "npm run test && standard-version && git push --follow-tags && npm publish",
+    "test": "npm run lint && npm run test:unit && npm run test:e2e",
+    "test:unit": "cross-env TEST=unit nyc ava --config unit-tests.config.cjs",
+    "test:e2e": "cross-env TEST=e2e ava --config e2e-tests.config.cjs",
+    "test:snapshot": "cross-env TEST=unit ava --update-snapshots"
+  },
+  "dependencies": {
+    "web-worker": "^1.0.0"
+  },
+  "devDependencies": {
+    "@ava/babel": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
+    "@vue/test-utils": "latest",
+    "ava": "latest",
+    "babel-eslint": "latest",
+    "babel-plugin-module-resolver": "latest",
+    "browser-env": "latest",
+    "cross-env": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "latest",
+    "jsdom-global": "latest",
+    "nuxt-edge": "latest",
+    "nyc": "latest",
+    "prettier": "^2.2.1",
+    "require-extension-hooks": "latest",
+    "require-extension-hooks-babel": "latest",
+    "require-extension-hooks-vue": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
